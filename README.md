@@ -1,5 +1,7 @@
 # stejs-loader
 
+`npm install --save-dev stejs-loader`
+
 This is a Webpack loader for [stejs](https://github.com/ItsaMeTuni/stejs). It was intended to be used with HtmlWebpackPlugin, like this:
 
 webpack.config.js
