@@ -12,7 +12,7 @@ module.exports = function(content)
     {
         context = {};
     }
-    if(typeof options.data == 'object')
+    else if(typeof options.data == 'object')
     {
         context = options.data;
     }
@@ -32,5 +32,5 @@ module.exports = function(content)
         throw new Errorconsole.error('data options needs to be an object, function or string');
     }
 
-    return stejs(content, context);
+    return stejs.processTemplateSingle(content, context);
 }
